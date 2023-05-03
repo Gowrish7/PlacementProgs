@@ -1,0 +1,38 @@
+import java.util.*;
+@SuppressWarnings("unused")
+public class Cirlce {
+	private double radius = 1.0;
+	private String color = "red";
+	
+	public Cirlce() {
+		this.radius=radius;
+		this.color=color;
+	}
+	
+	public Cirlce(double radius) {
+		this.radius=radius;
+	}
+	
+	public Cirlce(double radius , String color) {
+		this.radius=radius;
+		this.color=color;
+	}
+	public double getRadius() {
+		return radius;
+	}
+	public String color() {
+		return color;
+	}
+	public void setRadius(double radius) {
+		this.radius=radius;
+	}
+	public void setcolor(String color) {
+		this.color=color;
+	}
+	public double getArea() {
+		return 3.14*radius*radius;
+	}
+	public String toString() {
+		return "circle[radius="+radius+",color="+color+"]";
+	}
+}
